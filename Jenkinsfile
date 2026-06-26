@@ -22,11 +22,11 @@ pipeline {
             steps {
                 sh '''
                     echo "=== Установка зависимостей ==="
-                    pip install -r requirements.txt
-                    pip install pytest
+                    pip3 install -r requirements.txt
+                    pip3 install pytest
                     
                     echo "=== Запуск тестов ==="
-                    python -m pytest test_app.py -v
+                    python3 -m pytest test_app.py -v
                 '''
             }
         }
