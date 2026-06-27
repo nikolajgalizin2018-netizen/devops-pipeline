@@ -4,7 +4,7 @@ pipeline {
     environment {
         APP_VERSION = "${env.BUILD_NUMBER}"
         DOCKER_IMAGE = "myapp:${APP_VERSION}"
-        NEXUS_URL = "http://localhost:8081"
+        NEXUS_URL = "http://192.168.1.100:8081"
         NEXUS_USER = "admin"
         NEXUS_PASSWORD = "admin123"
     }
